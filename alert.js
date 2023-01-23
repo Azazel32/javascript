@@ -2,14 +2,19 @@ function jezus (){
     alert('To jest proste wywołanie okna')
 }
 function hal (){
-    alert('zxcvbn')
+    alert("Możesz być z siebie dumny")
 }
+document.querySelector('#zgadzam')
+addEventListener('click',()=>{tak()});
 
-    a.querySelector('#c');
-    addEventListener('click', 't');
+
 function be(){
-    alert('kontynuj')
+    if (confirm("Czy jesteś pewien by kontynuować")) {
+        alert("No to kontynuuj");
+    } else {
+        alert("Przykro mi że nie chcesz");
+    }
+
 }
-function ac(){
-    alert('wroc')
-}
+document.querySelector('#c')
+addEventListener('click',()=>{nie()});
