@@ -18,3 +18,4 @@ function be(){
 }
 document.querySelector('#c')
 addEventListener('click',()=>{nie()});
+
