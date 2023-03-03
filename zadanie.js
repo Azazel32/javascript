@@ -54,9 +54,16 @@ document.querySelector('#button8').addEventListener(type = 'click', function () 
         let para=document.createElement('p');
         para.innerHTML="Atrybut:<b>"+attribute.nodeName+"</b> ma wartosc:</b>" +attribute.nodeValue+"</b>";
         kontener.appendChild(para);
-
     }
 })
+document.querySelector('#button9').addEventListener('click',function hexColor() {
+    const box = document.querySelector('#textarena');
+    const colorHex = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+
+    box.setAttribute('style', `background-color: ${colorHex}; border: 1px solid`);
+    console.log(colorHex);
+})
+
 
 
 
