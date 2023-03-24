@@ -19,7 +19,7 @@ button3.addEventListener(type = 'click', function () {
         }
     }
 })
-document.querySelector("#buton4").addEventListener(type = 'click', function () {
+document.querySelector("#buton4").addEventListener(type = '', function () {
     const zadanie = document.querySelector('#tytul').getAttribute('title');
     alert(zadanie);
 })
