@@ -10,5 +10,5 @@ document.getElementById('3').innerHTML="funckja floor("+promt+")="+Math.floor(pr
 document.getElementById('4').innerHTML="funckja max("+promt+")="+Math.max(promt);
 document.getElementById('5').innerHTML="funckja min("+promt+")="+Math.min(promt);
 document.getElementById('6').innerHTML="funckja round("+promt+")="+Math.round(promt);
-document.getElementById('7').innerHTML="funckja pow("+promt+")="+Math.pow(promt,2);
+document.getElementById('7').innerHTML="funckja pow("+promt+",2)="+Math.pow(promt,2);
 document.getElementById('8').innerHTML="funckja sqrt("+promt+")="+Math.sqrt(promt);
