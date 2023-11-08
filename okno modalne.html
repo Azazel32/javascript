@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sumy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Kalkulator Sumy</h1>
+    <form id="suma">
+        <div class="row">
+        <div class="col">
+            <input type="number" class="form-control w-100 p-3" id="number1" required>
+        </div>
+        <div class="col">
+            <input type="number" class="form-control w-100 p-3" id="number2" required>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary w-100 p-3">Oblicz sumę</button>
+        </div>
+        </div>
+    </form>
+</div>
+<div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " id="resultModalLabel">Suma podanych liczb</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <p id="resultText" class="text-danger"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#suma").submit(function (e) {
+            e.preventDefault();
+            const number1 = parseFloat($("#number1").val());
+            const number2 = parseFloat($("#number2").val());
+            const sum = number1 + number2;
+            $("#resultText").text(`Wynik ${sum}`);
+            $("#resultModal").modal("show");
+        });
+    });
+</script>
+</body>
+</html>
